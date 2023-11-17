@@ -31,6 +31,7 @@ import {
 } from '../page-block/index.js';
 import { PageBlockSchema } from '../page-block/page-model.js';
 import { ParagraphBlockSchema } from '../paragraph-block/paragraph-model.js';
+import { PdfBlockSchema } from '../pdf-block/pdf-model.js';
 import { SurfaceBlockSchema } from '../surface-block/surface-model.js';
 import { SurfaceRefBlockSchema } from '../surface-ref-block/index.js';
 
@@ -176,6 +177,12 @@ export const PagePreset: BlockSpec[] = [
       },
     },
   },
+  {
+    schema: PdfBlockSchema,
+    view: {
+      component: literal`affine-pdf`,
+    },
+  },
 ];
 
 export const EdgelessPreset: BlockSpec[] = [
@@ -263,6 +270,12 @@ export const EdgelessPreset: BlockSpec[] = [
     schema: SurfaceRefBlockSchema,
     view: {
       component: literal`affine-surface-ref`,
+    },
+  },
+  {
+    schema: PdfBlockSchema,
+    view: {
+      component: literal`affine-pdf`,
     },
   },
 ];

@@ -11,6 +11,7 @@ import './image-block/index.js';
 import './surface-block/index.js';
 import './database-block/index.js';
 import './surface-ref-block/index.js';
+import './pdf-block/index.js';
 
 export * from './_common/components/index.js';
 export * from './_common/consts.js';
@@ -43,6 +44,7 @@ export * from './models.js';
 export * from './note-block/index.js';
 export * from './page-block/index.js';
 export * from './paragraph-block/index.js';
+export * from './pdf-block/index.js';
 export * from './surface-block/index.js';
 export * from './surface-block/surface-block.js';
 export * from './surface-block/surface-model.js';
